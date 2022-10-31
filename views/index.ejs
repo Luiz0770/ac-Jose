@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Betta</title>
+  <meta name="description" content="Quer atualizações sobre o mundo da tecnologia? Encontrou o Lugar certo! Venha para a Betta">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- CSS Customizado -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/betta.png">
+  <!-- CSS Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <!-- Cabeçalho + menu -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <!--a class="navbar-brand" href="#">Logo</a-->
+
+      <a class="navbar-brand" href="/">
+        <img src="/assets/images/logo.png" alt="logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/views/sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admin">Admin</a>
+          </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Moldura Inicial-->
+  <main class="container-fluid d-flex flex-column justify-content-center align-items-center conteudo">
+    <h1 class="inicio"><a href="/"><img src="/assets/images/bettal.png" alt="Betta"></a></h1>
+    <button type="button" class="btn-lg" onclick="(window.location.href='#noticia')">Saiba Mais!</button>
+  </main>
+
+  <!-- Banners -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/assets/images/banner3.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/images/banner2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/images/banner1.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Cartões destaque (conteúdo dinâmico)-->
+  <h1 class="principais text-center">ULTIMAS NOTÍCIAS</h1>
+  <section class="destaque container flexDestaque" id="noticia">
+    <div class="card" style="width: 18rem;">
+      <img src="/assets/images/tesla.png" class="card-img-top" alt="Tesla">
+      <div class="card-body">
+        <h5 class="card-title">Smartphone da Tesla</h5>
+        <p class="card-text">Conhecida por fabricar carros elétricos autônomos, a Tesla também pode estar desenvolvendo um smartphone que promete trazer uma nova revolução tecnológica no setor móvel. Pelo menos, é o que sugerem alguns rumores e vazamentos.</p>
+        <a href="https://gizmodo.uol.com.br/smartphone-da-tesla-comeca-especulacao-sobre-data-de-lancamento-do-model-pi/" class="btn btn-primary" target="_blank">Saiba mais!</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="/assets/images/academia.png" class="card-img-top" alt="Academia">
+      <div class="card-body">
+        <h5 class="card-title">Tecnologia nas academias</h5>
+        <p class="card-text">Investir em tecnologia para a academia não é mais uma opção. Ela se tornou essencial para obter resultados melhores para a academia e proporcionar uma experiência de excelência para os alunos.</p><br>
+        <a href="https://acadbrasil.com.br/blog/destaques/tecnologia-para-academia/" class="btn btn-primary" target="_blank">Saiba mais!</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="/assets/images/nvidia.png" class="card-img-top" alt="NVIDIA">
+      <div class="card-body">
+        <h5 class="card-title">Nvidia revela placas de vídeo RTX 4080 e RTX 4090</h5>
+        <p class="card-text">A Nvidia anunciou, na terça-feira (20), suas novas GPUs de alto desempenho da série RTX. As placas de vídeo RTX 4080 e RTX 4090.</p><br><br>
+        <a href="https://www.techtudo.com.br/noticias/2022/09/nvidia-revela-placas-de-video-rtx-4080-e-rtx-4090-veja-ficha-tecnica.ghtml" class="btn btn-primary" target="_blank">Saiba mais!</a>
+      </div>
+  </section>
+
+    <!-- Noticias (conteúdo dinâmico)-->
+    <h1 class="principais text-center">NOTÍCIAS RELEVANTES</h1>
+    <h5 class="text-center">As melhores noticias selecionadas para o seu usuario!!!</h5>
+    <!-- <section class="destaque container flexDestaque">
+      <div class="card" style="width: 18rem;">
+        <img src="img/nvidia.png" class="card-img-top" alt="NVIDIA">
+        <div class="card-body">
+          <h5 class="card-title">Nvidia revela placas de vídeo RTX 4080 e RTX 4090</h5>
+          <p class="card-text">A Nvidia anunciou, na terça-feira (20), suas novas GPUs de alto desempenho da série RTX. As placas de vídeo RTX 4080 e RTX 4090.</p><br><br>
+          <a href="https://www.techtudo.com.br/noticias/2022/09/nvidia-revela-placas-de-video-rtx-4080-e-rtx-4090-veja-ficha-tecnica.ghtml" class="btn btn-primary" target="_blank">Saiba mais!</a>
+        </div>
+      </div>
+    </section> -->
+
+    
+    <section id="grid-one" class="grid-one destaque container flexDestaque">
+      <div class="main-content grid-one-content destaque">
+          <div class="grid noticias container">
+              <% for (var n=0; n<dados.length;n++){%>
+                  <article>
+                    <div class="card" style="width: 18rem;">
+                      <div class="grid">
+                      <div class="card-body">
+                        <h5>
+                          <%=dados[n].titulo%>
+                        </h5>
+                        <p>
+                          <%=dados[n].texto%>
+                        </p>
+                        <a href="<%=dados[n].link%>" class="btn btn-primary" target="_blank">Saiba mais!</a>
+                      </div>
+                    </div>
+                  </article>
+                  <% } %>
+          </div>
+      </div>
+    </section>
+    
+    <section id="gallery" class="grid-one white-bg section">
+      <div class="main-content grid-one-content">
+          <!--h2 class="grid-main-heading">Gallery</h2-->
+          <div class="grid">
+              <% for (var i=0;i<gallery.length;i++){ %>
+                  <div class="gallery-img">
+                      <img src="./uploads/<%=gallery[i].arquivo%>" width="100%" />
+                  </div>
+                  <%}%>
+          </div>
+      </div>
+    </section>
+
+  <footer class="rodape">
+    <b>Betta | © Todos os direitos reservados.</b>
+</footer>
+  <a href="#" id="topo"><i class="bi bi-arrow-up-circle"></i></a>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+</html>

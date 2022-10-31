@@ -1,0 +1,189 @@
+/**
+ * Folha de estilo personalizada do site ...
+ * @author Betta
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Peralta&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Peralta&family=Roboto:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Righteous&family=Ubuntu:ital,wght@0,500;1,500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Righteous&family=Sarala:wght@400;700&family=Ubuntu:ital,wght@0,500;1,500&display=swap');
+
+/* Layout */
+.flexFooter {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.flexDestaque {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-top: 25px;
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: rgb(104, 104, 104);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(104, 104, 104);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(64, 195, 255);
+  border-radius: 15px;
+}
+
+/* Banner */
+main {
+  background:url(/assets/images/background.png);
+  height: 50vh; /* 100% da tela (largura) */
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Principais */
+.principais {
+  font-size: 60px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 50px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  color: #ffffff;
+  text-shadow:rgb(97, 97, 97) 2px 2px;
+}
+
+.conteudo {
+  border-top: 0.4px solid rgb(104, 104, 104);
+  background-image: url(/assets/images/moldura.png);
+}
+
+.destaque {
+  padding: 25px 0px 50px 0px; /*top right bottom left*/
+  align-items: stretch;
+  
+}
+
+
+.noticias {
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.inicio {
+  font-family: 'Lato', sans-serif;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #000;
+  font-size: 130px; color: #ffffff;
+}
+
+.btn-lg {
+  font-family: 'Sarala', sans-serif;
+  background-color: rgb(46, 189, 255);
+  color: rgb(255, 255, 255);
+  width: 180px;
+  height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-lg:hover {
+background-color: rgb(32, 161, 221);
+color: rgb(255, 255, 255);
+}
+
+/* Rodapé */
+footer {
+  padding: 32px;
+  border-top: 0.4px solid rgb(104, 104, 104);
+  text-align: center;
+  background-color: rgb(0, 39, 46);
+  color: rgb(255, 255, 255);
+}
+
+#social {
+  margin-bottom: 25px;
+}
+
+#topo {
+  font-size: 40PX;
+  color: rgb(46, 189, 255);
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(6, 136, 196);
+}
+
+/* Smartphone Landscape */
+@media (min-width: 576px) {
+  /*
+  body {
+    background-color: #ff0;
+  }
+  */
+
+  main {
+    height: 100vh;
+  }
+
+  /* Rodapé */
+  .flexFooter {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #social {
+    margin: 0;
+  }
+
+}
+
+/* Tablet Portrait */
+@media (min-width: 768px) {
+  /*
+  body {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  */
+
+  main {
+    height: 50vh;
+  }
+}
+
+/* Tablet Landscape */
+@media (min-width: 992px) {
+  /*
+  body {
+    background-color: #00ff00;
+  }
+  */
+
+  main {
+    height: 100vh;
+  }
+
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  /*
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+  */
+}
